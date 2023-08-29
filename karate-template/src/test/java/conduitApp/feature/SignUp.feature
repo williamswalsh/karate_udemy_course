@@ -57,11 +57,12 @@ Feature: Sign up new user
         And match response == <response>
 
         # For each Example a new randomEmail and randomUsername are generated, creating a new user -> 201
+        # If the first example fails with wrong assertion value, it proceeds onto the next example.
         Examples:
-            |email                   |password  |username          |responseCode |response                                                                                                             |
-            |#(randomEmail)          |Karate123 |fixedUsername1234 |422          |{"errors":{"username":["has already been taken"]}}                                                                   |
-            |fixedEmail1234@email.com|Karate123 |#(randomUsername) |422          |{"errors":{"email":["has already been taken"]}}                                                                      |
-            |#(randomEmail)          |Karate123 |#(randomUsername) |201          |{"user":{"email":"#(randomEmail)","username":"#(randomUsername)", "bio":null, "image":"#string", "token":"#string"}} |
+            |email                   |password  |username             |responseCode |response                                                                                                             |
+            |#(randomEmail)          |Karate123 |alreadyTakenUsername |422          |{"errors":{"username":["has already been taken"]}}                                                                   |
+            |alreadyTakenemail@a.com |Karate123 |#(randomUsername)    |422          |{"errors":{"email":["has already been taken"]}}                                                                      |
+            |#(randomEmail)          |Karate123 |#(randomUsername)    |201          |{"user":{"email":"#(randomEmail)","username":"#(randomUsername)", "bio":null, "image":"#string", "token":"#string"}} |
 
     Scenario:
         * def userData = { "email": "william99@example.com", "username": "william99"}
