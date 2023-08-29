@@ -1,0 +1,37 @@
+# Karate 
+Karate can natively handle JSON.
+
+JSON:
+-----
+# Set the value of attribute in an object
+set myObject.Cars[0] = "Tesla"
+
+# Delete an element in an array
+remove myObject.Cars[0]
+
+# Delete an attribute of an object
+remove myObject.salary.Q1
+-----
+
+ENV:
+----
+- Java
+- Mvn
+- Git
+- Yarn?
+- Postman
+- VScode
+    - Karate runner
+    - Cucumber (Gherkin) Full Syntax
+
+
+@ignore over Scenario can be used to not execute a Scenario.
+e.g.
+    @ignore
+    Scenario: My scenario that will not be executed.
+
+yarn install
+npm start
+http://localhost:4200/api/tags
+http://conduit.productionready.io/api/tags
+

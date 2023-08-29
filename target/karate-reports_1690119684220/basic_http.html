@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("6f14e3f6-74c5-49a1-9baf-776febfee1a6");
+    posthog.capture("report_feature",{karate_version:"1.4.0-SNAPSHOT",karate_meta:"vscode:0.8.0"});
+  }
+});
+</script>
+
+    <title>basic_http</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-07-03 10:36:32 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span></span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:8]"><span>[2:8]</span> <span></span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">basic_http.feature</span><span class="feature-label">|</span>
+          <span class="feature-name"></span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>700</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;http://google.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">668</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">10:36:28.515 request:
+1 &gt; GET http://google.com
+1 &gt; Host: google.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:36:28.812 request:
+2 &gt; GET http://google.com
+2 &gt; Host: www.google.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+10:36:29.065 response time in milliseconds: 218
+2 &lt; 200
+2 &lt; Date: Mon, 03 Jul 2023 09:36:29 GMT
+2 &lt; Expires: -1
+2 &lt; Cache-Control: private, max-age=0
+2 &lt; Content-Type: text/html; charset=ISO-8859-1
+2 &lt; Content-Security-Policy-Report-Only: object-src &#39;none&#39;;base-uri &#39;self&#39;;script-src &#39;nonce-iZ5YJ3wk4HC_AQ0rYjuTEw&#39; &#39;strict-dynamic&#39; &#39;report-sample&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp
+2 &lt; Server: gws
+2 &lt; X-XSS-Protection: 0
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; Set-Cookie: AEC=Ad49MVFHFA9T_xzDsrsyfbnxk5JKCwbt15z7oiS6FI29JwpJhyB5VI4Fzg; expires=Sat, 30-Dec-2023 09:36:29 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+2 &lt; Cross-Origin-Opener-Policy-Report-Only: same-origin; report-to=&quot;gfe-default_product_name&quot;
+2 &lt; Report-To: {&quot;group&quot;:&quot;gfe-default_product_name&quot;,&quot;max_age&quot;:2592000,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://csp.withgoogle.com/csp/report-to/default_product_name&quot;}]}
+&lt;!doctype html&gt;&lt;html itemscope=&quot;&quot; itemtype=&quot;http://schema.org/WebPage&quot; lang=&quot;en-IE&quot;&gt;&lt;head&gt;&lt;meta content=&quot;text/html; charset=UTF-8&quot; http-equiv=&quot;Content-Type&quot;&gt;&lt;meta content=&quot;/images/branding/googleg/1x/googleg_standard_color_128dp.png&quot; itemprop=&quot;image&quot;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){var _g={kEI:&#39;nZaiZNb7ApyjhbIPw9Ws2A4&#39;,kEXPI:&#39;0,1359409,6059,206,4804,2316,383,246,5,1129120,1578491,16114,28684,22431,1361,12316,2818,14765,4998,17075,38444,2872,2891,8348,3406,606,58286,2403,2615,13721,1014,1,16916,2652,4,1528,2304,42127,13658,4437,22616,6621,7596,1,11943,30211,2,16737,23024,5679,1020,31122,4569,6255,23421,1252,5835,19300,2,7482,27082,8155,6682,699,2,1399,14568,874,19633,7,1922,22193,8226,2253,19566,3141,17057,20233,4140,16066,3370,5007,13129,5831,2305,1578,1520,3030,6110,11510,7734,2738,2276,609,449,12601,6690,4585,2836,3537,2365,662,477,1158,5798,2,2148,5892,1144,2,777,5124,2733,3079,7914,449,7415,2798,2093,3,3,7,2,3671,439,3,1271,2041,372,1776,5202600,8800534,4589,3311,141,795,19735,1,303,44,6611,6,268,53,64,23943483,578,4043528,5417,11255,2894,6250,19889,3917,2859,191,1403940,681643,23078621,308,4123,897,1841,266,712,1258,1,817,560,1022,833,1549,133,7812,97,77,99,688,521,330,545,348,2731,613,60,531,1254,2,199,670,446,82,578,15,88,797,264,1392,98,256,968,86,1,127,309,225,249,1078,336,744,793,20,327,1132,119,178,1079,14,167,295,341,597,130,669,149,40,483,3,3,556,1147,298,710,49,786,514,5,117,3,174,447,135,4,535,170,199,975,253,169,7,211,199,1574,111,42,2,102,325,276,30,40,121,731,1061,80,1,2,694,77,566,838,421,1353&#39;,kBL:&#39;VNBp&#39;,kOPI:89978449};(function(){var a;(null==(a=window.google)?0:a.stvsc)?google.kEI=_g.kEI:window.google=_g;}).call(this);})();(function(){google.sn=&#39;webhp&#39;;google.kHL=&#39;en-IE&#39;;})();(function(){
+var h=this||self;function l(){return void 0!==window.google&amp;&amp;void 0!==window.google.kOPI&amp;&amp;0!==window.google.kOPI?window.google.kOPI:null};var m,n=[];function p(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&quot;eid&quot;)));)a=a.parentNode;return b||m}function q(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&quot;leid&quot;)));)a=a.parentNode;return b}function r(a){/^http:/i.test(a)&amp;&amp;&quot;https:&quot;===window.location.protocol&amp;&amp;(google.ml&amp;&amp;google.ml(Error(&quot;a&quot;),!1,{src:a,glmm:1}),a=&quot;&quot;);return a}
+function t(a,b,c,d,k){var e=&quot;&quot;;-1===b.search(&quot;&amp;ei=&quot;)&amp;&amp;(e=&quot;&amp;ei=&quot;+p(d),-1===b.search(&quot;&amp;lei=&quot;)&amp;&amp;(d=q(d))&amp;&amp;(e+=&quot;&amp;lei=&quot;+d));d=&quot;&quot;;var g=-1===b.search(&quot;&amp;cshid=&quot;)&amp;&amp;&quot;slh&quot;!==a,f=[];f.push([&quot;zx&quot;,Date.now().toString()]);h._cshid&amp;&amp;g&amp;&amp;f.push([&quot;cshid&quot;,h._cshid]);c=c();null!=c&amp;&amp;f.push([&quot;opi&quot;,c.toString()]);for(c=0;c&lt;f.length;c++){if(0===c||0&lt;c)d+=&quot;&amp;&quot;;d+=f[c][0]+&quot;=&quot;+f[c][1]}return&quot;/&quot;+(k||&quot;gen_204&quot;)+&quot;?atyp=i&amp;ct=&quot;+String(a)+&quot;&amp;cad=&quot;+(b+e+d)};m=google.kEI;google.getEI=p;google.getLEI=q;google.ml=function(){return null};google.log=function(a,b,c,d,k,e){e=void 0===e?l:e;c||(c=t(a,b,e,d,k));if(c=r(c)){a=new Image;var g=n.length;n[g]=a;a.onerror=a.onload=a.onabort=function(){delete n[g]};a.src=c}};google.logUrl=function(a,b){b=void 0===b?l:b;return t(&quot;&quot;,a,b)};}).call(this);(function(){google.y={};google.sy=[];google.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1};google.sx=function(a){google.sy.push(a)};google.lm=[];google.plm=function(a){google.lm.push.apply(google.lm,a)};google.lq=[];google.load=function(a,b,c){google.lq.push([[a],b,c])};google.loadAll=function(a,b){google.lq.push([a,b])};google.bx=!1;google.lx=function(){};}).call(this);google.f={};(function(){
+document.documentElement.addEventListener(&quot;submit&quot;,function(b){var a;if(a=b.target){var c=a.getAttribute(&quot;data-submitfalse&quot;);a=&quot;1&quot;===c||&quot;q&quot;===c&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener(&quot;click&quot;,function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(&quot;A&quot;===a.tagName){a=&quot;1&quot;===a.getAttribute(&quot;data-nohref&quot;);break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}
+&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1967d2}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#681da8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1967d2}a:visited{color:#681da8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;color:#000;border:none;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}&lt;/style&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){window.google.erd={jsr:1,bv:1823,de:true};
+var l=this||self;var m,n=null!=(m=l.mei)?m:1,p,q=null!=(p=l.sdo)?p:!0,r=0,t,u=google.erd,v=u.jsr;google.ml=function(a,b,d,e,f){f=void 0===f?2:f;b&amp;&amp;(t=a&amp;&amp;a.message);if(google.dl)return google.dl(a,f,d),null;if(0&gt;v){window.console&amp;&amp;console.error(a,d);if(-2===v)throw a;b=!1}else b=!a||!a.message||&quot;Error loading script&quot;===a.message||r&gt;=n&amp;&amp;!e?!1:!0;if(!b)return null;r++;d=d||{};b=encodeURIComponent;var c=&quot;/gen_204?atyp=i&amp;ei=&quot;+b(google.kEI);google.kEXPI&amp;&amp;(c+=&quot;&amp;jexpid=&quot;+b(google.kEXPI));c+=&quot;&amp;srcpg=&quot;+b(google.sn)+&quot;&amp;jsr=&quot;+b(u.jsr)+&quot;&amp;bver=&quot;+b(u.bv);var g=a.lineNumber;void 0!==g&amp;&amp;(c+=&quot;&amp;line=&quot;+g);var h=
+a.fileName;h&amp;&amp;(0&lt;h.indexOf(&quot;-extension:/&quot;)&amp;&amp;(f=3),c+=&quot;&amp;script=&quot;+b(h),g&amp;&amp;h===window.location.href&amp;&amp;(g=document.documentElement.outerHTML.split(&quot;\n&quot;)[g],c+=&quot;&amp;cad=&quot;+b(g?g.substring(0,300):&quot;No script found.&quot;)));c+=&quot;&amp;jsel=&quot;+f;for(var k in d)c+=&quot;&amp;&quot;,c+=b(k),c+=&quot;=&quot;,c+=b(d[k]);c=c+&quot;&amp;emsg=&quot;+b(a.name+&quot;: &quot;+a.message);c=c+&quot;&amp;jsst=&quot;+b(a.stack||&quot;N/A&quot;);12288&lt;=c.length&amp;&amp;(c=c.substr(0,12288));a=c;e||google.log(0,&quot;&quot;,a);return a};window.onerror=function(a,b,d,e,f){if(t!==a){a=f instanceof Error?f:Error(a);void 0===d||&quot;lineNumber&quot;in a||(a.lineNumber=d);void 0===b||&quot;fileName&quot;in a||(a.fileName=b);b=void 0;if(a.stack&amp;&amp;(-1!==a.stack.indexOf(&quot;?xjs=s0&quot;)||a.stack.indexOf(&quot;&amp;xjs=s0&quot;))){b=document.querySelectorAll(&quot;script[src*=\\/xjs\\/_\\/js\\/]&quot;);for(e=d=0;e&lt;b.length;e++)console.log(b[e].async),d+=b[e].async?1:0;var c=f=e=-1,g=-1,h=-1;if(performance&amp;&amp;google.xjsu){e=0;f=google.timers.load.t.xjsee?1:0;g=c=0;h=performance.getEntriesByType(&quot;resource&quot;);for(var k=0;k&lt;h.length;k++)h[k].name===google.xjsu&amp;&amp;(e=1),-1!==h[k].name.indexOf(&quot;/xjs/_/js/&quot;)&amp;&amp;(c+=1,g+=&quot;script&quot;===h[k].initiatorType?1:0);h=c-g}b={cad:&quot;pl_&quot;+e+&quot;.pe_&quot;+f+&quot;.asc_&quot;+d+&quot;.tsc_&quot;+b.length+&quot;.fasc_&quot;+(b.length-d)+&quot;.lxc_&quot;+c+&quot;.lsx_&quot;+g+&quot;.lnsx_&quot;+h}}google.ml(a,!1,b,!1,&quot;SyntaxError&quot;===a.name||&quot;SyntaxError&quot;===a.message.substring(0,11)||-1!==a.message.indexOf(&quot;Script error&quot;)?3:0)}t=null;q&amp;&amp;r&gt;=n&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&quot;#fff&quot;&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){var src=&#39;/images/nav_logo229.png&#39;;var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}
+if (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}
+}
+})();&lt;/script&gt;&lt;div id=&quot;mngb&quot;&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Search&lt;/b&gt; &lt;a class=gb1 href=&quot;https://www.google.com/imghp?hl=en&amp;tab=wi&quot;&gt;Images&lt;/a&gt; &lt;a class=gb1 href=&quot;http://maps.google.ie/maps?hl=en&amp;tab=wl&quot;&gt;Maps&lt;/a&gt; &lt;a class=gb1 href=&quot;https://play.google.com/?hl=en&amp;tab=w8&quot;&gt;Play&lt;/a&gt; &lt;a class=gb1 href=&quot;https://www.youtube.com/?tab=w1&quot;&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href=&quot;https://news.google.com/?tab=wn&quot;&gt;News&lt;/a&gt; &lt;a class=gb1 href=&quot;https://mail.google.com/mail/?tab=wm&quot;&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href=&quot;https://drive.google.com/?tab=wo&quot;&gt;Drive&lt;/a&gt; &lt;a class=gb1 style=&quot;text-decoration:none&quot; href=&quot;https://www.google.ie/intl/en/about/products?tab=wh&quot;&gt;&lt;u&gt;More&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href=&quot;http://www.google.ie/history/optout?hl=en&quot; class=gb4&gt;Web History&lt;/a&gt; | &lt;a  href=&quot;/preferences?hl=en&quot; class=gb4&gt;Settings&lt;/a&gt; | &lt;a target=_top id=gb_70 href=&quot;https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=http://www.google.com/&amp;ec=GAZAAQ&quot; class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear=&quot;all&quot; id=&quot;lgpd&quot;&gt;&lt;div id=&quot;lga&quot;&gt;&lt;img alt=&quot;Google&quot; height=&quot;92&quot; src=&quot;/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png&quot; style=&quot;padding:28px 0 14px&quot; width=&quot;272&quot; id=&quot;hplogo&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action=&quot;/search&quot; name=&quot;f&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr valign=&quot;top&quot;&gt;&lt;td width=&quot;25%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&quot;center&quot; nowrap=&quot;&quot;&gt;&lt;input name=&quot;ie&quot; value=&quot;ISO-8859-1&quot; type=&quot;hidden&quot;&gt;&lt;input value=&quot;en-IE&quot; name=&quot;hl&quot; type=&quot;hidden&quot;&gt;&lt;input name=&quot;source&quot; type=&quot;hidden&quot; value=&quot;hp&quot;&gt;&lt;input name=&quot;biw&quot; type=&quot;hidden&quot;&gt;&lt;input name=&quot;bih&quot; type=&quot;hidden&quot;&gt;&lt;div class=&quot;ds&quot; style=&quot;height:32px;margin:4px 0&quot;&gt;&lt;input class=&quot;lst&quot; style=&quot;margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000&quot; autocomplete=&quot;off&quot; value=&quot;&quot; title=&quot;Google Search&quot; maxlength=&quot;2048&quot; name=&quot;q&quot; size=&quot;57&quot;&gt;&lt;/div&gt;&lt;br style=&quot;line-height:0&quot;&gt;&lt;span class=&quot;ds&quot;&gt;&lt;span class=&quot;lsbb&quot;&gt;&lt;input class=&quot;lsb&quot; value=&quot;Google Search&quot; name=&quot;btnG&quot; type=&quot;submit&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;ds&quot;&gt;&lt;span class=&quot;lsbb&quot;&gt;&lt;input class=&quot;lsb&quot; id=&quot;tsuid_1&quot; value=&quot;I&#39;m Feeling Lucky&quot; name=&quot;btnI&quot; type=&quot;submit&quot;&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){var id=&#39;tsuid_1&#39;;document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}
+else top.location=&#39;/doodles/&#39;;};})();&lt;/script&gt;&lt;input value=&quot;AD69kcEAAAAAZKKkrXPxswCSQKjG0Hd6FepubQQQJvBe&quot; name=&quot;iflsig&quot; type=&quot;hidden&quot;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&quot;fl sblc&quot; align=&quot;left&quot; nowrap=&quot;&quot; width=&quot;25%&quot;&gt;&lt;a href=&quot;/advanced_search?hl=en-IE&amp;amp;authuser=0&quot;&gt;Advanced search&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;input id=&quot;gbv&quot; name=&quot;gbv&quot; type=&quot;hidden&quot; value=&quot;1&quot;&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){var a,b=&quot;1&quot;;if(document&amp;&amp;document.getElementById)if(&quot;undefined&quot;!=typeof XMLHttpRequest)b=&quot;2&quot;;else if(&quot;undefined&quot;!=typeof ActiveXObject){var c,d,e=[&quot;MSXML2.XMLHTTP.6.0&quot;,&quot;MSXML2.XMLHTTP.3.0&quot;,&quot;MSXML2.XMLHTTP&quot;,&quot;Microsoft.XMLHTTP&quot;];for(c=0;d=e[c++];)try{new ActiveXObject(d),b=&quot;2&quot;}catch(h){}}a=b;if(&quot;2&quot;==a&amp;&amp;-1==location.search.indexOf(&quot;&amp;gbv=2&quot;)){var f=google.gbvu,g=document.getElementById(&quot;gbv&quot;);g&amp;&amp;(g.value=a);f&amp;&amp;window.setTimeout(function(){location.href=f},0)};}).call(this);&lt;/script&gt;&lt;/form&gt;&lt;div id=&quot;gac_scont&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size:83%;min-height:3.5em&quot;&gt;&lt;br&gt;&lt;div id=&quot;gws-output-pages-elements-homepage_additional_languages__als&quot;&gt;&lt;style&gt;#gws-output-pages-elements-homepage_additional_languages__als{font-size:small;margin-bottom:24px}#SIvCob{color:#3c4043;display:inline-block;line-height:28px;}#SIvCob a{padding:0 3px;}.H6sW5{display:inline-block;margin:0 2px;white-space:nowrap}.z4hgWe{display:inline-block;margin:0 2px}&lt;/style&gt;&lt;div id=&quot;SIvCob&quot;&gt;Google offered in:  &lt;a href=&quot;http://www.google.com/setprefs?sig=0_YSBC3pon58bCdLhAosNVfbN2s6Q%3D&amp;amp;hl=ga&amp;amp;source=homepage&amp;amp;sa=X&amp;amp;ved=0ahUKEwiWvre1nvL_AhWcUUEAHcMqC-sQ2ZgBCAU&quot;&gt;Gaeilge&lt;/a&gt;  &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span id=&quot;footer&quot;&gt;&lt;div style=&quot;font-size:10pt&quot;&gt;&lt;div style=&quot;margin:19px auto;text-align:center&quot; id=&quot;WqQANb&quot;&gt;&lt;a href=&quot;/intl/en/ads/&quot;&gt;Advertising&lt;/a&gt;&lt;a href=&quot;http://www.google.ie/intl/en/services/&quot;&gt;Business Solutions&lt;/a&gt;&lt;a href=&quot;/intl/en/about.html&quot;&gt;About Google&lt;/a&gt;&lt;a href=&quot;http://www.google.com/setprefdomain?prefdom=IE&amp;amp;prev=http://www.google.ie/&amp;amp;sig=64a3e81dK_c0nQV1eoOAdUggiNtDyxMWGHRGk%3D&quot;&gt;Google.ie&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;font-size:8pt;color:#70757a&quot;&gt;&amp;copy; 2023 - &lt;a href=&quot;/intl/en/policies/privacy/&quot;&gt;Privacy&lt;/a&gt; - &lt;a href=&quot;/intl/en/policies/terms/&quot;&gt;Terms&lt;/a&gt;&lt;/p&gt;&lt;/span&gt;&lt;/center&gt;&lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){window.google.cdo={height:757,width:1440};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b){var c=window.document,d=&quot;CSS1Compat&quot;==c.compatMode?c.documentElement:c.body;a=d.clientWidth;b=d.clientHeight}
+if(a&amp;&amp;b&amp;&amp;(a!=google.cdo.width||b!=google.cdo.height)){var e=google,f=e.log,g=&quot;/client_204?&amp;atyp=i&amp;biw=&quot;+a+&quot;&amp;bih=&quot;+b+&quot;&amp;ei=&quot;+google.kEI,h=&quot;&quot;,k=[],l=void 0!==window.google&amp;&amp;void 0!==window.google.kOPI&amp;&amp;0!==window.google.kOPI?window.google.kOPI:null;null!=l&amp;&amp;k.push([&quot;opi&quot;,l.toString()]);for(var m=0;m&lt;k.length;m++){if(0===m||0&lt;m)h+=&quot;&amp;&quot;;h+=k[m][0]+&quot;=&quot;+k[m][1]}f.call(e,&quot;&quot;,&quot;&quot;,g+h)};}).call(this);})();&lt;/script&gt; &lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){google.xjs={ck:&#39;xjs.hp.KmgsEx1Za9c.L.X.O&#39;,cs:&#39;ACT90oGvn2GYaC76O55g_mrMY5MEji5J9Q&#39;,csss:&#39;ACT90oFTid_mitzF78rVvgdfjZbEZmvZBA&#39;,excm:[],sepcss:false};})();&lt;/script&gt;    &lt;script nonce=&quot;iZ5YJ3wk4HC_AQ0rYjuTEw&quot;&gt;(function(){var u=&#39;/xjs/_/js/k\x3dxjs.hp.en.9QlM0Up86x4.O/am\x3dAAAAAAAAAABAAAAAAAAAAAAAANAJAFAAwAI/d\x3d1/ed\x3d1/rs\x3dACT90oG6sriSlbnpJf5RZ94dYrXEj-CeTw/m\x3dsb_he,d,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl&#39;;var amd=0;
+var e=this||self,f=function(c){return c};var g;var k=function(c){this.g=c};k.prototype.toString=function(){return this.g+&quot;&quot;};var m={};
+function q(){var c=u,n=function(){};google.lx=google.stvsc?n:function(){google.timers&amp;&amp;google.timers.load&amp;&amp;google.tick&amp;&amp;google.tick(&quot;load&quot;,&quot;xjsls&quot;);var a=document;var b=&quot;SCRIPT&quot;;&quot;application/xhtml+xml&quot;===a.contentType&amp;&amp;(b=b.toLowerCase());b=a.createElement(b);a=null===c?&quot;null&quot;:void 0===c?&quot;undefined&quot;:c;if(void 0===g){var d=null;var l=e.trustedTypes;if(l&amp;&amp;l.createPolicy){try{d=l.createPolicy(&quot;goog#html&quot;,{createHTML:f,createScript:f,createScriptURL:f})}catch(r){e.console&amp;&amp;e.console.error(r.message)}g=
+d}else g=d}a=(d=g)?d.createScriptURL(a):a;a=new k(a,m);b.src=a instanceof k&amp;&amp;a.constructor===k?a.g:&quot;type_error:TrustedResourceUrl&quot;;var h,p;(h=(a=null==(p=(h=(b.ownerDocument&amp;&amp;b.ownerDocument.defaultView||window).document).querySelector)?void 0:p.call(h,&quot;script[nonce]&quot;))?a.nonce||a.getAttribute(&quot;nonce&quot;)||&quot;&quot;:&quot;&quot;)&amp;&amp;b.setAttribute(&quot;nonce&quot;,h);document.body.appendChild(b);google.psa=!0;google.lx=n};google.bx||google.lx()};google.xjsu=u;e._F_jsUrl=u;setTimeout(function(){0&lt;amd?google.caft(function(){return q()},amd):q()},0);})();window._ = window._ || {};window._DumpException = _._DumpException = function(e){throw e;};window._s = window._s || {};_s._DumpException = _._DumpException;window._qs = window._qs || {};_qs._DumpException = _._DumpException;function _F_installCss(c){}
+(function(){google.jl={blt:&#39;none&#39;,chnk:0,dw:false,dwu:true,emtn:0,end:0,ico:false,ikb:0,ine:false,injs:&#39;none&#39;,injt:0,injth:0,injv2:false,lls:&#39;default&#39;,pdt:0,rep:0,snet:true,strt:0,ubm:false,uwp:true};})();(function(){var pmc=&#39;{\x22d\x22:{},\x22sb_he\x22:{\x22agen\x22:true,\x22cgen\x22:true,\x22client\x22:\x22heirloom-hp\x22,\x22dh\x22:true,\x22ds\x22:\x22\x22,\x22fl\x22:true,\x22host\x22:\x22google.com\x22,\x22jsonp\x22:true,\x22lm\x22:true,\x22msgs\x22:{\x22cibl\x22:\x22Clear Search\x22,\x22dym\x22:\x22Did you mean:\x22,\x22lcky\x22:\x22I\\u0026#39;m Feeling Lucky\x22,\x22lml\x22:\x22Learn more\x22,\x22psrc\x22:\x22This search was removed from your \\u003Ca href\x3d\\\x22/history\\\x22\\u003EWeb History\\u003C/a\\u003E\x22,\x22psrl\x22:\x22Remove\x22,\x22sbit\x22:\x22Search by image\x22,\x22srch\x22:\x22Google Search\x22},\x22ovr\x22:{},\x22pq\x22:\x22\x22,\x22rfs\x22:[],\x22sbas\x22:\x220 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08)\x22,\x22stok\x22:\x22uGQvHZHtv1TEc4wg_F4EFsdvK_s\x22}}&#39;;google.pmc=JSON.parse(pmc);})();(function(){
+var b=function(a){var c=0;return function(){return c&lt;a.length?{done:!1,value:a[c++]}:{done:!0}}},e=this||self;var g,h;a:{for(var k=[&quot;CLOSURE_FLAGS&quot;],l=e,n=0;n&lt;k.length;n++)if(l=l[k[n]],null==l){h=null;break a}h=l}var p=h&amp;&amp;h[610401301];g=null!=p?p:!1;var q,r=e.navigator;q=r?r.userAgentData||null:null;function t(a){return g?q?q.brands.some(function(c){return(c=c.brand)&amp;&amp;-1!=c.indexOf(a)}):!1:!1}function u(a){var c;a:{if(c=e.navigator)if(c=c.userAgent)break a;c=&quot;&quot;}return-1!=c.indexOf(a)};function v(){return g?!!q&amp;&amp;0&lt;q.brands.length:!1}function w(){return u(&quot;Safari&quot;)&amp;&amp;!(x()||(v()?0:u(&quot;Coast&quot;))||(v()?0:u(&quot;Opera&quot;))||(v()?0:u(&quot;Edge&quot;))||(v()?t(&quot;Microsoft Edge&quot;):u(&quot;Edg/&quot;))||(v()?t(&quot;Opera&quot;):u(&quot;OPR&quot;))||u(&quot;Firefox&quot;)||u(&quot;FxiOS&quot;)||u(&quot;Silk&quot;)||u(&quot;Android&quot;))}function x(){return v()?t(&quot;Chromium&quot;):(u(&quot;Chrome&quot;)||u(&quot;CriOS&quot;))&amp;&amp;!(v()?0:u(&quot;Edge&quot;))||u(&quot;Silk&quot;)}function y(){return u(&quot;Android&quot;)&amp;&amp;!(x()||u(&quot;Firefox&quot;)||u(&quot;FxiOS&quot;)||(v()?0:u(&quot;Opera&quot;))||u(&quot;Silk&quot;))};var z=v()?!1:u(&quot;Trident&quot;)||u(&quot;MSIE&quot;);y();x();w();var A=!z&amp;&amp;!w(),D=function(a){if(/-[a-z]/.test(&quot;ved&quot;))return null;if(A&amp;&amp;a.dataset){if(y()&amp;&amp;!(&quot;ved&quot;in a.dataset))return null;a=a.dataset.ved;return void 0===a?null:a}return a.getAttribute(&quot;data-&quot;+&quot;ved&quot;.replace(/([A-Z])/g,&quot;-$1&quot;).toLowerCase())};var E=[],F=null;function G(a){a=a.target;var c=performance.now(),f=[],H=f.concat,d=E;if(!(d instanceof Array)){var m=&quot;undefined&quot;!=typeof Symbol&amp;&amp;Symbol.iterator&amp;&amp;d[Symbol.iterator];if(m)d=m.call(d);else if(&quot;number&quot;==typeof d.length)d={next:b(d)};else throw Error(&quot;a`&quot;+String(d));for(var B=[];!(m=d.next()).done;)B.push(m.value);d=B}E=H.call(f,d,[c]);if(a&amp;&amp;a instanceof HTMLElement)if(a===F){if(c=4&lt;=E.length)c=5&gt;(E[E.length-1]-E[E.length-4])/1E3;if(c){c=google.getEI(a);a.hasAttribute(&quot;data-ved&quot;)?f=a?D(a)||&quot;&quot;:&quot;&quot;:f=(f=
+a.closest(&quot;[data-ved]&quot;))?D(f)||&quot;&quot;:&quot;&quot;;f=f||&quot;&quot;;if(a.hasAttribute(&quot;jsname&quot;))a=a.getAttribute(&quot;jsname&quot;);else{var C;a=null==(C=a.closest(&quot;[jsname]&quot;))?void 0:C.getAttribute(&quot;jsname&quot;)}google.log(&quot;rcm&quot;,&quot;&amp;ei=&quot;+c+&quot;&amp;ved=&quot;+f+&quot;&amp;jsname=&quot;+(a||&quot;&quot;))}}else F=a,E=[c]}window.document.addEventListener(&quot;DOMContentLoaded&quot;,function(){document.body.addEventListener(&quot;click&quot;,G)});}).call(this);&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:8]</span>
+                <span class="scenario-name"></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3477</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://httpbin.org/anything&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request { &quot;myKey&quot;: &quot;myValue&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3470</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">10:36:29.089 request:
+1 &gt; POST https://httpbin.org/anything
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 19
+1 &gt; Host: httpbin.org
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;myKey&quot;:&quot;myValue&quot;}
+
+10:36:32.554 response time in milliseconds: 3460
+1 &lt; 200
+1 &lt; Date: Mon, 03 Jul 2023 09:36:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 520
+1 &lt; Connection: keep-alive
+1 &lt; Server: gunicorn/19.9.0
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Credentials: true
+{
+  &quot;args&quot;: {}, 
+  &quot;data&quot;: &quot;{\&quot;myKey\&quot;:\&quot;myValue\&quot;}&quot;, 
+  &quot;files&quot;: {}, 
+  &quot;form&quot;: {}, 
+  &quot;headers&quot;: {
+    &quot;Accept-Encoding&quot;: &quot;gzip,deflate&quot;, 
+    &quot;Content-Length&quot;: &quot;19&quot;, 
+    &quot;Content-Type&quot;: &quot;application/json; charset=UTF-8&quot;, 
+    &quot;Host&quot;: &quot;httpbin.org&quot;, 
+    &quot;User-Agent&quot;: &quot;Apache-HttpClient/4.5.14 (Java/17.0.6)&quot;, 
+    &quot;X-Amzn-Trace-Id&quot;: &quot;Root=1-64a2969d-5c6a24a16861a6d16761c467&quot;
+  }, 
+  &quot;json&quot;: {
+    &quot;myKey&quot;: &quot;myValue&quot;
+  }, 
+  &quot;method&quot;: &quot;POST&quot;, 
+  &quot;origin&quot;: &quot;31.187.2.110&quot;, 
+  &quot;url&quot;: &quot;https://httpbin.org/anything&quot;
+}
+
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
