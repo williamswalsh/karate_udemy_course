@@ -1,12 +1,12 @@
 Feature: Sign up new user
 
-    Background:
+    Background: Define apiUrl & common helper function calls.
         * def DataGenerator = Java.type('helpers.DataGenerator');
+        * def randomEmail = DataGenerator.getRandomEmail();
+        * def randomUsername = DataGenerator.getRandomUsername();
         Given url apiUrl
 
     Scenario:
-        * def randomEmail = DataGenerator.getRandomEmail();
-        * def randomUsername = DataGenerator.getRandomUsername();
         * def signUpRequest = 
         """
             {
@@ -37,9 +37,8 @@ Feature: Sign up new user
         """
 
     @runMe
-    Scenario Outline: Validate status codes.:
-        * def randomEmail = DataGenerator.getRandomEmail();
-        * def randomUsername = DataGenerator.getRandomUsername();
+    Scenario Outline: Validate status codes using a Scenario Outline. NB
+
         * def signUpRequest = 
         """
             {
@@ -62,8 +61,7 @@ Feature: Sign up new user
             |email                   |password  |username             |responseCode |response                                                                                                             |
             |#(randomEmail)          |Karate123 |alreadyTakenUsername |422          |{"errors":{"username":["has already been taken"]}}                                                                   |
             |alreadyTakenemail@a.com |Karate123 |#(randomUsername)    |422          |{"errors":{"email":["has already been taken"]}}                                                                      |
-            |#(randomEmail)          |Karate123 |#(randomUsername)    |201          |{"user":{"email":"#(randomEmail)","username":"#(randomUsername)", "bio":null, "image":"#string", "token":"#string"}} |
-
+            |#(randomEmail)          |Karate123 |#(randomUsername)    |201          |{"user":{"email":"#(randomEmail)","username":"#(randomUsername)", "bio": "##string", "image": "#string", "token": "#string"}} |
     Scenario:
         * def userData = { "email": "william99@example.com", "username": "william99"}
 
