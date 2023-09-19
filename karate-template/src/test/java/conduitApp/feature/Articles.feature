@@ -7,13 +7,15 @@ Feature: Testing the login flow
         # any vars created in feature can be reffered to by capturing return of the feature call
         # * def tokenResponse = callonce read('classpath:helpers/CreateToken.feature') { "email": "william@test.com", "password": "karate123" }
         # * def token = tokenResponse.authToken
+        * def articleRequestBody = read('classpath:conduitApp/json/newArticleRequest.feature')
 
+    @runMe
     Scenario: Create an article
         Given path 'api/articles/'
         # And header Authorization = 'Token ' + authToken
         And header content-type = 'application/json'
         And header accept = 'application/json'
-        And request { "article": { "title": "Something already created 34", "description": "about", "body": "info", "tagList": ["tag"] } }
+        And request articleRequestBody
         And method Post
         # Then status 422 
         Then status 201 

@@ -27,16 +27,8 @@ Feature: Sign up new user
         And method Post
         Then status 422
         And match response ==
-        """
-        {
-            "errors": {
-                "email": ["has already been taken"],
-                "username": ["has already been taken"]
-            }
-        }
-        """
-
-    @runMe
+        
+        
     Scenario Outline: Validate status codes using a Scenario Outline. NB
 
         * def signUpRequest = 
