@@ -18,6 +18,8 @@ function fn() {
     config.userPassword = 'myDiff23'
   }
 
+  // BeforeEachTest hook - karate.call       will execute code before each test is executed
+  // BeforeAllTests hook - karate.callSingle will execute code before all tests are executed
   var authToken = karate.callSingle('classpath:helpers/CreateToken.feature', config).authToken 
   karate.configure('headers', {Authorization: 'Token ' + authToken})
 
